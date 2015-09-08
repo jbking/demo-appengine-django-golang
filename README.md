@@ -1,4 +1,7 @@
-# A demo sharing datastore beyond runtimes Python and Go in single Project on google appengine
+# An experimental miscellaneous code for google appengine
+
+- sharing datastore beyond runtimes Python and Go in single project
+- django admin with django-nonrel
 
 # Python
 
@@ -6,11 +9,11 @@ myproject
 
 ## run on localhost
 
-$ dev_appserver.py app.yaml
+$ ./manage.py runserver
 
 ## deploy onto appengine
 
-$ appcfg.py -A charged-state-106215 update app.yaml
+$ ./manage.py deploy --application=charged-state-106215
 
 # Go
 
