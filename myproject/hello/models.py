@@ -1,3 +1,7 @@
 from google.appengine.ext import ndb
 
-# Create your models here.
+
+class Greeting(ndb.Model):
+    author = ndb.StringProperty()
+    content = ndb.StringProperty()
+    date = ndb.DateTimeProperty()
